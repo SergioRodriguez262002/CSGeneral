@@ -11,7 +11,7 @@ int main() {
     printf("%s\n",pMap);
 
     Node *MoveTree = createMoveTree(pMap);
-    move();
+    
 
 
     
@@ -27,7 +27,7 @@ int main() {
 
         printBoard(number, 'X');
         printf("You entered: %d\n", number);
-        move();
+        move(number);
     }
     printf("%c Wins\n",winState());
 

@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "Teleprinter.h"
 
-char pMap[] = "123456789";
-
+char* pMap;
+void initializeBoard(char map[]){
+    pMap = map;
+}
 char winState()
 {
     // Horizontal wins

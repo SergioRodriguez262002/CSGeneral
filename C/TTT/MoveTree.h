@@ -1,10 +1,18 @@
 #ifndef MOVETREE_H
 #define MOVETREE_H
 
-struct MoveTree
+typedef struct Node
 {
-    
-};
+    char pMap[9];
+    struct Node *nextMove[9];
+} Node;
 
+typedef struct MoveTree
+{
+    Node *root;
+} MoveTree;
 
-#endif 
+Node *createMoveTree(char map[]);
+int move();
+
+#endif

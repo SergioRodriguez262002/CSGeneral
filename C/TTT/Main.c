@@ -1,9 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "Teleprinter.h"
+#include "MoveTree.h"
 
 int main() {
     int number;
+    char pMap[] = "123456789";
+    initializeBoard(pMap);
     printBoard(1, '1');
+    printf("%s\n",pMap);
+
+    Node *MoveTree = createMoveTree(pMap);
+    move();
+
+
     
     while (winState() == 'n') {
         printf("Enter move: ");
@@ -17,6 +27,7 @@ int main() {
 
         printBoard(number, 'X');
         printf("You entered: %d\n", number);
+        move();
     }
     printf("%c Wins\n",winState());
 

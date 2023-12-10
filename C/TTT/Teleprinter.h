@@ -3,5 +3,7 @@
 
 void printBoard(int pos, char player);
 char winState();
+void initializeBoard(char map[]);
+
 
 #endif 

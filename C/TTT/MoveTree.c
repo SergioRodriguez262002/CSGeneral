@@ -70,8 +70,9 @@ int movesAvailable()
 {
     for (int i = 0; i < 9; i++)
     {
-        if (pMap[i] != 'X' || pMap[i] != 'O')
+        if (pMap[i] != 'X' && pMap[i] != 'O')
         {
+
             return 1;
         }
     }

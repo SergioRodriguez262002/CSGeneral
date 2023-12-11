@@ -44,7 +44,15 @@ char winState()
         return pMap[2];
     }
 
-    return 'n';
+    for (int i = 0; i < 9; i++)
+    {
+        if (pMap[i] != 'X' && pMap[i] != 'O')
+        {
+            return 'n';
+        }
+    }
+
+    return 'd';
 }
 
 void printBoard()

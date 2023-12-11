@@ -3,8 +3,6 @@
 #include "Teleprinter.h"
 #include "MoveTree.h"
 
-
-
 int main()
 {
     int number;
@@ -29,11 +27,17 @@ int main()
         }
         printf("\nYou entered: %d\n", number);
         pMap[number-1] = 'X';
-        pMap[move()] = 'O';
+        int machineMove = move();
+        if(machineMove != 99){
+            pMap[machineMove] = 'O';
+        }
         printBoard();
 
     }
-    printf("%c Wins\n", winState());
-
+    if(winState() == 'd'){
+        printf("Draw\n");
+    } else{
+        printf("%c Wins\n", winState());
+    }
     return 0;
 }

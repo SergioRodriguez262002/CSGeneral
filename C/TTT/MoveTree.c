@@ -62,7 +62,7 @@ int randomMove()
         randomNumber = rand() % 8;
         printf("Random machine move %d\n", randomNumber);
         //printf("Board %c\n", pMap[randomNumber]);
-    } while (pMap[randomNumber - 1] == 'X' || pMap[randomNumber - 1] == 'O');
+    } while (pMap[randomNumber] == 'X' || pMap[randomNumber] == 'O');
 
     return randomNumber;
 }

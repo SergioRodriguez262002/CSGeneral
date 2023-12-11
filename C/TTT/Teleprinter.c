@@ -42,6 +42,9 @@ char winState()
 
 void printBoard(int pos, char player)
 {
+    if(pos == 99){
+        return;
+    }
     
     if (pos != 0)
     {

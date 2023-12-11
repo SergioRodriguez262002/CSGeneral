@@ -16,5 +16,8 @@ typedef struct MoveTree
 
 Node *createMoveTree(char map[]);
 int move(int lastMove);
+int randomMove();
+int movesAvailable();
+char copyCurrentMap();
 
 #endif

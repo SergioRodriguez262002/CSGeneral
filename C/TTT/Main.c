@@ -8,13 +8,19 @@ int main()
     int number;
     char pMap[] = "123456789";
     initializeBoard(pMap);
-    printBoard();
     printf("%s\n", pMap);
 
     Node *MoveTree = createMoveTree(pMap);
 
-    while (winState() == 'n')
+    char cont;
+
+    char b[] = "123456789";
+    
+
+    // while (winState() == 'n' || winState() == 'd')
+    while (1)
     {
+        printBoard();
         printf("Enter move: ");
         if (scanf("%d", &number) != 1)
         {
@@ -26,18 +32,24 @@ int main()
             continue;
         }
         printf("\nYou entered: %d\n", number);
-        pMap[number-1] = 'X';
-        int machineMove = move();
-        if(machineMove != 99){
+        pMap[number - 1] = 'X';
+        int machineMove = move(1);
+        if (machineMove != 99)
+        {
             pMap[machineMove] = 'O';
         }
-        printBoard();
+        // printBoard();
+        if (winState() == 'X' || winState() == 'O')
+        {
+            printf("%c Wins\n",winState());
+            for (int i = 0; i < 9; i++)
+            {
+                pMap[i] = (char)(i+49);
+            }
+            resetTree();
+            printf("%s\n",pMap);
+        }
+    }
 
-    }
-    if(winState() == 'd'){
-        printf("Draw\n");
-    } else{
-        printf("%c Wins\n", winState());
-    }
     return 0;
 }

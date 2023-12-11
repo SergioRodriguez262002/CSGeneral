@@ -22,7 +22,7 @@ int main()
     {
         printBoard();
         printf("Enter move: ");
-        if (scanf("%d", &number) != 1)
+        if (scanf("%d", &number) != 1 || number < 1 || number > 9)
         {
             // Handling invalid input (non-integer)
             printf("Invalid input. Please enter a valid integer.\n");

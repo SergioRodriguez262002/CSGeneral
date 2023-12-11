@@ -3,12 +3,14 @@
 #include "Teleprinter.h"
 #include "MoveTree.h"
 
+
+
 int main()
 {
     int number;
     char pMap[] = "123456789";
     initializeBoard(pMap);
-    printBoard(1, '1');
+    printBoard();
     printf("%s\n", pMap);
 
     Node *MoveTree = createMoveTree(pMap);
@@ -25,13 +27,11 @@ int main()
                 ;
             continue;
         }
+        printf("\nYou entered: %d\n", number);
+        pMap[number-1] = 'X';
+        pMap[move()] = 'O';
+        printBoard();
 
-        printBoard(number, 'X');
-        printf("You entered: %d\n", number);
-        if (movesAvailable())
-        {
-            printBoard(move(number), 'O');
-        }
     }
     printf("%c Wins\n", winState());
 

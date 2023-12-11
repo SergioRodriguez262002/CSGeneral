@@ -40,16 +40,10 @@ char winState()
     return 'n';
 }
 
-void printBoard(int pos, char player)
+
+void printBoard()
 {
-    if(pos == 99){
-        return;
-    }
     
-    if (pos != 0)
-    {
-        pMap[pos - 1] = player;
-    }
     for (int i = 0; i < 3; i++)
     {
         int p = (i * 3);

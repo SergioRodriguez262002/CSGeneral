@@ -3,5 +3,7 @@
 
 void printChessBoard();
 void Printer(char *board); // faux constructor;
+int isLowercase(char c);
+int isUppercase(char c);
 
 #endif

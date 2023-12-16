@@ -26,7 +26,8 @@ void Printer(char *board)
 
 void printChessBoard()
 {
-    // printf("%s\n",gameState);
+    // ncurses commands
+    
 
     for (int i = 0; i < 64; i++)
     {

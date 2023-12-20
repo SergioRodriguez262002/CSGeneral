@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Binary.h"
+#include "AnyBase.h"
 
 int main()
 {
@@ -10,7 +10,9 @@ int main()
     while (1)
     {
 
-        getPrompt();
+        char* num = getPrompt(16);
+
+        printf("Random number %s\n",  num);
 
         int userInput;
 
@@ -28,12 +30,12 @@ int main()
             // An error occurred while reading the input
             printf("Invalid input\n");
         }
-
+            /*
         if(promptResponse(userInput)){
             printf("Pass\n");
         } else {
             printf("Fail\n");
-        }
+        }*/
     }
 
     return 0;

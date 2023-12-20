@@ -27,8 +27,8 @@ Dec  Char                           Dec  Char     Dec  Char     Dec  Char   Dif
   6  ACK (acknowledge)               38  &         70  F        102  f
   7  BEL (bell)                      39  '         71  G        103  g
   8  BS  (backspace)                 40  (         72  H        104  h
-  9  TAB (horizontal tab)            41  )         73  I        105  i
- 10  LF  (NL line feed, new line)    42  *         74  J        106  j
+  
+    TAB (horizontal tab)            41  )         73  I        105  i 10  LF  (NL line feed, new line)    42  *         74  J        106  j
  11  VT  (vertical tab)              43  +         75  K        107  k
  12  FF  (NP form feed, new page)    44  ,         76  L        108  l
  13  CR  (carriage return)           45  -         77  M        109  m
@@ -50,3 +50,9 @@ Dec  Char                           Dec  Char     Dec  Char     Dec  Char   Dif
  29  GS  (group separator)           61  =         93  ]        125  }
  30  RS  (record separator)          62  >         94  ^        126  ~
  31  US  (unit separator)            63  ?         95  _        127  DEL
+
+
+
+
+
+

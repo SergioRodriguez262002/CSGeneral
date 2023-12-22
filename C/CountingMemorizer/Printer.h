@@ -3,6 +3,6 @@
 
 
 
-
+void printPrompt(char* num, int base);
 
 #endif

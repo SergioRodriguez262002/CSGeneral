@@ -19,9 +19,6 @@ const char *baseNames[] = {
         "Hexadecimal"   // Base-16
     };
 
-void printPrompt(char* num){
-    int base = sizeof(num)/sizeof(char);
-    printf("What is the decimal value of %s which is a %s number.\n", num, baseNames[base]);
-
-    
+void printPrompt(char* num, int base){
+    printf("What is the decimal value of %s which is a %s number? ", num, baseNames[base - 2]);    
 }

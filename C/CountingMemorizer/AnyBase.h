@@ -3,5 +3,6 @@
 
 
 char* getPrompt(int base);
+int promptResponse(int dec);
 
 #endif

@@ -1,0 +1,1 @@
+This compilation is simply a gathering of miscellaneous projects, a diverse assortment born out of creativity and exploration. Each project within this collection represents a unique venture, reflecting the spontaneous and varied nature of the creative process. 
